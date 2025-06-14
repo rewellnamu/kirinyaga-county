@@ -1,0 +1,13 @@
+<h2>Open Tenders</h2>
+
+<div class="tenders-list">
+  <div class="tender-card" *ngFor="let tender of tenders">
+    <div class="tender-header">
+      <h3>{{ tender.title }}</h3>
+      <span class="category">{{ tender.category }}</span>
+    </div>
+    <p class="description">{{ tender.description }}</p>
+    <p class="deadline">🕒 Deadline: {{ tender.deadline }}</p>
+    <button class="view-button">View Details</button>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #006400;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border-left: 6px solid #006400;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    span {
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .ongoing {
+      background-color: #ffa500; // orange
+    }
+
+    .completed {
+      background-color: #28a745; // green
+    }
+  }
+
+  .location {
+    font-weight: 500;
+    margin: 0.5rem 0;
+    color: #333;
+  }
+
+  p {
+    color: #444;
+    font-size: 0.95rem;
+  }
+}

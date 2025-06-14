@@ -1,0 +1,63 @@
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #006400;
+}
+
+.tenders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tender-card {
+  background-color: white;
+  border-left: 6px solid #006400;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  .tender-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .category {
+      font-size: 0.85rem;
+      background-color: #e0f7e9;
+      color: #006400;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+    }
+  }
+
+  .description {
+    margin: 0.5rem 0;
+    color: #444;
+  }
+
+  .deadline {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+
+  .view-button {
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #004d00;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<h2>Latest News</h2>
+
+<div class="news-grid">
+  <div class="news-card" *ngFor="let news of mockNews">
+    <img [src]="news.image" alt="News image" />
+    <div class="news-content">
+      <h3>{{ news.title }}</h3>
+      <p class="date">{{ news.date }}</p>
+      <p>{{ news.summary }}</p>
+    </div>
+  </div>
+</div>

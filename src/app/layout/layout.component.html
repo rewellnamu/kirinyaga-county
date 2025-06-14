@@ -1,0 +1,18 @@
+<!-- src/app/layout.component.html -->
+<header class="navbar">
+  <h1>Kirinyaga County Government</h1>
+  <nav>
+    <a routerLink="/news" routerLinkActive="active">News</a>
+    <a routerLink="/projects" routerLinkActive="active">Projects</a>
+    <a routerLink="/tenders" routerLinkActive="active">Tenders</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+  </nav>
+</header>
+
+<main class="main-content">
+    <router-outlet></router-outlet>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 Kirinyaga County Government. All rights reserved.</p>
+</footer>

@@ -1,0 +1,12 @@
+<h2>County Projects</h2>
+
+<div class="projects-grid">
+  <div class="project-card" *ngFor="let project of projects">
+    <div class="card-header">
+      <h3>{{ project.title }}</h3>
+      <span [ngClass]="project.status.toLowerCase()">{{ project.status }}</span>
+    </div>
+    <p class="location">📍 {{ project.location }}</p>
+    <p>{{ project.description }}</p>
+  </div>
+</div>
