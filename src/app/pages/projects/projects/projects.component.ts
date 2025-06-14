@@ -27,6 +27,36 @@ export class ProjectsComponent {
       description: 'A modern facility to equip youth with vocational and digital skills.',
       location: 'Kutus',
       status: 'Ongoing'
+    },
+    {
+      title: 'Kirinyaga County Water Supply Project',
+      description: 'Improving water supply systems across the county.',
+      location: 'Various Locations',
+      status: 'Planned'
+    },
+    {
+      title: 'Kutus Market Renovation',
+      description: 'Renovating the Kutus market to enhance trade and commerce.',
+      location: 'Kutus',
+      status: 'Completed'
+    },
+    {
+      title: 'Gichugu Eco-Tourism Development',
+      description: 'Developing eco-tourism facilities to promote local tourism.',
+      location: 'Gichugu',
+      status: 'Ongoing'
+    },
+    {
+      title: 'Kianyaga Town Road Upgrade',
+      description: 'Upgrading roads in Kianyaga town to improve transport infrastructure.',
+      location: 'Kianyaga',
+      status: 'Planned'
+    },
+    {
+      title: 'Mwea Tea Factory Modernization',
+      description: 'Modernizing tea processing facilities to enhance production efficiency.',
+      location: 'Mwea',
+      status: 'Ongoing'
     }
   ];
 }

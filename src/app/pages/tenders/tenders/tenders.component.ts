@@ -27,6 +27,24 @@ export class TendersComponent {
       description: 'Supply and installation of IT hardware for education centres.',
       deadline: 'June 25, 2025',
       category: 'ICT'
+    },
+    {
+      title: 'Health Facility Renovation',
+      description: 'Renovation of health facilities in rural areas.',
+      deadline: 'August 15, 2025',
+      category: 'Health'
+    },
+    {
+      title: 'Water Supply Projects',
+      description: 'Development of water supply systems in underserved areas.',
+      deadline: 'September 5, 2025',
+      category: 'Water'
+    },
+    {
+      title: 'Community Training Programs',
+      description: 'Training programs for community development and empowerment.',
+      deadline: 'July 20, 2025',
+      category: 'Training'
     }
   ];
 }
