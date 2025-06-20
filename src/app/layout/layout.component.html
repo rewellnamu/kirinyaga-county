@@ -1,21 +1,27 @@
 <!-- src/app/layout.component.html -->
 <header class="navbar">
-  <h1>Kirinyaga County Government</h1>
-  <img src="/image.png" alt="Kirinyaga County Logo" class="logo">
-  <div class="search-bar">
-    <input type="text" placeholder="Search..." />
-    <button type="submit">Search</button>
+  <div style="display: flex; align-items: center; flex-direction: column">
+    <span class="logo-container">
+      <img src="/image.png" alt="Kirinyaga County Logo" class="logo" />
+    </span>
+    <span class="brand-title">Kirinyaga County Government</span>
+    <span class="subtitle">Empowering Communities, Driving Development</span>
   </div>
+
   <nav>
     <a routerLink="/news" routerLinkActive="active">News</a>
     <a routerLink="/projects" routerLinkActive="active">Projects</a>
     <a routerLink="/tenders" routerLinkActive="active">Tenders</a>
     <a routerLink="/contact" routerLinkActive="active">Contact</a>
   </nav>
+  <form class="search-bar" autocomplete="off">
+    <input type="text" placeholder="Search..." />
+    <button type="submit">Search</button>
+  </form>
 </header>
 
 <main class="main-content">
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </main>
 
 <footer class="footer">

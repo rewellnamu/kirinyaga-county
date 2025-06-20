@@ -1,57 +1,118 @@
 h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   color: #006400;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 0 1vw;
 }
 
 .project-card {
-  background-color: #fff;
-  border-left: 6px solid #006400;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #f1f8e9 0%, #e3f2fd 100%);
+  border-left: 6px solid #388e3c;
+  border-radius: 16px;
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  box-shadow: 0 6px 24px rgba(44, 62, 80, 0.10);
+  transition:
+    transform 0.22s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.22s;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-6px) scale(1.025);
+    box-shadow: 0 12px 32px rgba(44, 62, 80, 0.16);
+  }
 
   .card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0.7rem;
 
     h3 {
       margin: 0;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      color: #1b5e20;
+      font-weight: 600;
+      letter-spacing: 0.2px;
     }
 
     span {
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-      font-size: 0.85rem;
+      padding: 0.3rem 0.9rem;
+      border-radius: 1.2rem;
+      font-size: 0.93rem;
       color: #fff;
       text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      box-shadow: 0 1px 4px rgba(56, 142, 60, 0.08);
+      border: none;
+      transition:
+        background 0.2s,
+        color 0.2s;
+      background: #bdbdbd;
     }
 
     .ongoing {
-      background-color: #ffa500; // orange
+      background: linear-gradient(90deg, #ffa500 0%, #ffd54f 100%);
+      color: #4e2600;
     }
 
     .completed {
-      background-color: #28a745; // green
+      background: linear-gradient(90deg, #43a047 0%, #388e3c 100%);
+      color: #fffde7;
     }
   }
 
   .location {
     font-weight: 500;
-    margin: 0.5rem 0;
-    color: #333;
+    margin: 0.5rem 0 0.7rem 0;
+    color: #388e3c;
+    font-size: 1.05rem;
+    letter-spacing: 0.2px;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
   }
 
   p {
     color: #444;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
+    margin-bottom: 0;
+    margin-top: 0.2rem;
+    line-height: 1.6;
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 700px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 0;
+  }
+  .project-card {
+    min-height: 160px;
+    padding: 1rem 0.8rem 1rem 0.8rem;
+    .card-header h3 {
+      font-size: 1.08rem;
+    }
+    .location {
+      font-size: 0.98rem;
+    }
+    p {
+      font-size: 0.97rem;
+    }
   }
 }
